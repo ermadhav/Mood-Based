@@ -65,9 +65,9 @@ function App() {
               <button type="button" id="music" onClick={handleMusic}>
                 Get Music
               </button>
-              <button type="button" id="playlist">
+              {/* <button type="button" id="playlist">
                 Get Playlist
-              </button>
+              </button> */}
             </div>
             <div id="embed-iframe">
               {trackId && (
@@ -85,7 +85,7 @@ function App() {
           </form>
         </section>
 
-        <section id="second">
+        {/* <section id="second">
           <footer>
             <p>
               This site helps you find music that matches your current mood.
@@ -111,10 +111,10 @@ function App() {
               <p className="text">I want to be loved too</p>
             </div>
           </footer>
-        </section>
+        </section> */}
 
         <section id="warning">
-          <footer>
+          {/* <footer>
             <div className="container">
               <p style={{ fontSize: '25px', color: 'wheat' }}>Warnings</p>
               <p>→ You need to log in to Spotify to listen to the full songs</p>
@@ -123,7 +123,7 @@ function App() {
               <p>→ You don't get music against immoral prompts</p>
               <p className="text">Created by Faruk TUTKUS</p>
             </div>
-          </footer>
+          </footer> */}
         </section>
       </main>
     </div>
