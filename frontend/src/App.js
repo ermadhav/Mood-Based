@@ -81,39 +81,9 @@ function App() {
           </form>
         </section>
 
-        {/* <section id="second">
-          <footer>
-            <p>
-              This site helps you find music that matches your current mood.
-              Whether you're feeling happy, sad, or anything in between, simply
-              describe your mood, select a language, and discover a playlist that
-              resonates with you.
-            </p>
-            <p style={{ fontSize: '25px' }}>Sample Mood-Based Prompts</p>
-            <div className="container">
-              <p className="text">I feel unhappy right now</p>
-              <p className="text">I tried so hard to love her</p>
-              <p className="text">I think I've fallen in love</p>
-              <p className="text">I feel very energized</p>
-              <p className="text">I feel like doing nothing today</p>
-              <p className="text">I need to dance</p>
-              <p className="text">I feel very energized</p>
-              <p className="text">I don't feel like going to school</p>
-              <p className="text">I'm quiet and depressive</p>
-              <p className="text">I beat cancer</p>
-              <p className="text">I'm so happy today</p>
-              <p className="text">I feel like crying for no reason</p>
-              <p className="text">I regret it very much.</p>
-              <p className="text">I want to be loved too</p>
-            </div>
-          </footer>
-        </section> */}
-
-        {/* <section id="warning"> */}
           <footer>
             
           </footer>
-        {/* </section> */}
       </main>
     </div>
   );
