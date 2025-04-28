@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [mood, setMood] = useState('');
-  const [language, setLanguage] = useState('Any language');
-  const [trackId, setTrackId] = useState('');
+  const [mood, setMood] = useState("");
+  const [language, setLanguage] = useState("Any language");
+  const [trackId, setTrackId] = useState("");
 
   const handleMusic = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/getMusic', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("http://localhost:5000/api/getMusic", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ mood, language }),
       });
 
@@ -18,8 +18,8 @@ function App() {
       if (data.id) {
         setTrackId(data.id);
       } else {
-        setTrackId('');
-        alert('No song found.');
+        setTrackId("");
+        alert("No song found.");
       }
     } catch (err) {
       console.error(err);
@@ -64,7 +64,7 @@ function App() {
                 Get Music
               </button>
             </div>
-            
+
             <div id="embed-iframe">
               {trackId && (
                 <iframe
@@ -81,9 +81,19 @@ function App() {
           </form>
         </section>
 
-          <footer>
-            
-          </footer>
+        <footer
+          style={{
+            textAlign: "center",
+            padding: "1.5rem",
+            marginTop: "2rem",
+            fontSize: "0.9rem",
+            color: "#777",
+            borderTop: "1px solid #333",
+          }}
+        >
+          Copyright © 2025 All rights reserved | This website is made with ❤️ by
+          Madhav Tiwari
+        </footer>
       </main>
     </div>
   );
