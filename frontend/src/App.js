@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-
 function App() {
   const [mood, setMood] = useState("");
   const [language, setLanguage] = useState("Any language");
