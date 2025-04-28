@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <main>
+      <main className="main-content">
         <section id="intro">
           <form id="moodForm">
             <h1>Mood-Based Music Recommender</h1>
@@ -80,21 +80,12 @@ function App() {
             </div>
           </form>
         </section>
-
-        <footer
-          style={{
-            textAlign: "center",
-            padding: "1.5rem",
-            marginTop: "2rem",
-            fontSize: "0.9rem",
-            color: "#777",
-            borderTop: "1px solid #333",
-          }}
-        >
-          Copyright © 2025 All rights reserved | This website is made with ❤️ by
-          Madhav Tiwari
-        </footer>
       </main>
+
+      <footer>
+        Copyright © 2025 All rights reserved | This website is made with ❤️ by
+        Madhav Tiwari
+      </footer>
     </div>
   );
 }
