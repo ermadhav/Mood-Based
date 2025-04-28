@@ -110,16 +110,9 @@ function App() {
         </section> */}
 
         {/* <section id="warning"> */}
-          {/* <footer>
-            <div className="container">
-              <p style={{ fontSize: '25px', color: 'wheat' }}>Warnings</p>
-              <p>→ You need to log in to Spotify to listen to the full songs</p>
-              <p>→ Mobile devices always have to see the preview</p>
-              <p>→ Get Playlist may not always work correctly</p>
-              <p>→ You don't get music against immoral prompts</p>
-              <p className="text">Created by Faruk TUTKUS</p>
-            </div>
-          </footer> */}
+          <footer>
+            
+          </footer>
         {/* </section> */}
       </main>
     </div>
