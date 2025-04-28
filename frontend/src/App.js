@@ -46,19 +46,19 @@ function App() {
                 onChange={(e) => setLanguage(e.target.value)}
               >
                 <option value="Any language">Random</option>
-                <option value="Arabic">Arabic</option>
-                <option value="Chinese">Chinese</option>
+                {/* <option value="Arabic">Arabic</option> */}
+                {/* <option value="Chinese">Chinese</option> */}
                 <option value="English">English</option>
                 <option value="French">French</option>
-                <option value="German">German</option>
+                {/* <option value="German">German</option> */}
                 <option value="Hindi">Hindi</option>
-                <option value="Italian">Italian</option>
-                <option value="Japanese">Japanese</option>
-                <option value="Korean">Korean</option>
-                <option value="Portuguese">Portuguese</option>
-                <option value="Russian">Russian</option>
+                {/* <option value="Italian">Italian</option> */}
+                {/* <option value="Japanese">Japanese</option> */}
+                {/* <option value="Korean">Korean</option> */}
+                {/* <option value="Portuguese">Portuguese</option> */}
+                {/* <option value="Russian">Russian</option> */}
                 <option value="Spanish">Spanish</option>
-                <option value="Turkish">Turkish</option>
+                {/* <option value="Turkish">Turkish</option> */}
               </select>
               <button type="button" id="music" onClick={handleMusic}>
                 Get Music
@@ -83,7 +83,7 @@ function App() {
       </main>
 
       <footer>
-        Copyright © 2025 All rights reserved | This website is made with ❤️ by
+        Copyright © 2025 All rights reserved | This Project is made with ❤️ by
         Madhav Tiwari
       </footer>
     </div>
