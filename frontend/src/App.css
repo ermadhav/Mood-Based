@@ -93,3 +93,18 @@ form#moodForm h1 {
 input, select, button, iframe {
   transition: all 0.3s ease;
 }
+
+#root, section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #333;
+  background-color: #111; /* Match your dark theme */
+}
