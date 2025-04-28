@@ -113,7 +113,7 @@ function App() {
           </footer>
         </section> */}
 
-        <section id="warning">
+        {/* <section id="warning"> */}
           {/* <footer>
             <div className="container">
               <p style={{ fontSize: '25px', color: 'wheat' }}>Warnings</p>
@@ -124,7 +124,7 @@ function App() {
               <p className="text">Created by Faruk TUTKUS</p>
             </div>
           </footer> */}
-        </section>
+        {/* </section> */}
       </main>
     </div>
   );
