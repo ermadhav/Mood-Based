@@ -60,15 +60,11 @@ function App() {
                 <option value="Spanish">Spanish</option>
                 <option value="Turkish">Turkish</option>
               </select>
-            </div>
-            <div>
               <button type="button" id="music" onClick={handleMusic}>
                 Get Music
               </button>
-              {/* <button type="button" id="playlist">
-                Get Playlist
-              </button> */}
             </div>
+            
             <div id="embed-iframe">
               {trackId && (
                 <iframe
