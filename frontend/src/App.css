@@ -1,128 +1,85 @@
-/* Reset & Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #111; /* Dark black background */
-  color: #eee; /* Light text */
-  font-family: 'Roboto Mono', monospace;
-  min-height: 100vh;
+  background-color: #111; /* Deep black background */
+  color: #eee; /* Soft white text */
+  font-family: 'Poppins', sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  margin: 0;
   padding: 2rem;
-}
-
-main {
-  background-color: #1a1a1a; /* Slightly lighter than body */
-  border-radius: 12px;
-  padding: 2rem;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-  animation: fadeIn 0.5s ease-in;
 }
 
 h1 {
+  font-size: 2.5rem;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #fff; /* White header */
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 500px;
 }
 
 input, select {
+  width: 100%;
   padding: 0.8rem 1rem;
-  font-size: 1rem;
+  background-color: #222;
+  border: 1px solid #444;
   border-radius: 8px;
-  border: 1px solid #333;
-  background-color: #111;
   color: #eee;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  font-size: 1rem;
 }
 
-input:focus, select:focus {
-  outline: none;
-  border-color: #555;
-  background-color: #1a1a1a;
+input::placeholder {
+  color: #aaa;
 }
 
 button {
   padding: 0.8rem 1.5rem;
-  margin-top: 0.5rem;
   font-size: 1rem;
-  border: 1px solid #333;
+  border: 2px solid #eee;
   background-color: transparent;
   color: #eee;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+  margin-bottom: 1rem; /* Space between button and music card */
 }
 
 button:hover {
   background-color: #eee;
   color: #111;
+  transform: scale(1.02);
 }
 
-iframe {
-  margin-top: 2rem;
+/* Section where music is shown */
+#second {
+  background-color: #1a1a1a; /* Slightly lighter black */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* Very soft glow */
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+/* Spotify iframe or any embed inside #second */
+#second iframe {
   width: 100%;
   height: 380px;
   border: none;
-  border-radius: 8px;
-  background-color: #000;
+  border-radius: 12px;
 }
 
-/* Sections */
-#second {
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-top: 2rem;
-}
-
-.text {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-  color: #ccc;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.text:hover {
-  color: #fff;
-}
-
-#warning {
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  color: #bbb;
-}
-
-footer {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-footer p:hover {
-  color: #aaa;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Subtle transition for smoother appearance */
+input, select, button, #second {
+  transition: all 0.3s ease;
 }
